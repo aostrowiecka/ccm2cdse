@@ -256,7 +256,12 @@
       ],
       "file:size": 388299,
       "file:checksum": "12204eb4f2e076425f532e96a178ed305ecb97c7fa9f0457f327ac673f8cf06c39ad",
-      "file:local_path": "preview.png"
+      "file:local_path": "preview.png",
+      "proj:shape": [
+        512,
+        442
+      ],
+      "proj:code": null
     }
   },
   "collection": "ccm-atmospheric-rad-vhr"
