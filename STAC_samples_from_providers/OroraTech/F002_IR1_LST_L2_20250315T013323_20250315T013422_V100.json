@@ -116,8 +116,7 @@
     },
     "thumbnail": {
       "type": "image/png",
-      "title": "Quicklook",
-      "created": "2026-06-18T13:29:52Z",
+      "title": "Thumbnail",
       "proj:code": "EPSG:4326",
       "proj:shape": [
         331,
