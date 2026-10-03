@@ -46,7 +46,7 @@
 	},
 	"properties": {
 		"datetime": "2026-08-05T07:51:02Z",
-		"description": "Sensing Methane Concentration Map, expressed in ppmv",
+		"description": "Sensing Methane Concentration layer, expressed in ppmv",
 		"start_datetime": "2026-08-05T07:51:02Z",
 		"end_datetime": "2026-08-05T07:51:07Z",
 		"eo:cloud_cover": 0,
@@ -87,6 +87,12 @@
 			"description": "Methane concentration expressed in ppmv",
 			"roles": [
 				"data"
+			],
+			"bands": [
+		        {
+		          "name": "ch4",
+		          "description": "Methane concentration expressed in ppmv"
+		        }				
 			],
 			"type": "image/tiff; application=geotiff; profile=cloud-optimized",
 			"data_type": "float32",
@@ -129,14 +135,19 @@
 		},
 		"thumbnail": {
 			"title": "Thumbnail",
-			"description": "Quicklook providing a visual preview of the methane product for this acquisition.",
+			"description": "Thumbnail providing a visual preview of the methane product for this acquisition.",
 			"roles": [
 				"thumbnail"
 			],
 			"type": "image/png",
 			"file:checksum": "1e2087fe271e10aa46fbd07b12af679d16207cbc9c19aef8bc5fed2278509786e2e4",
 			"file:local_path": "GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100.png",
-			"file:size": 147108
+			"file:size": 147108,
+			"proj:shape": [
+				342,
+				720
+			],
+			"proj:code": null		
 		}
 	}
 }
