@@ -194,6 +194,16 @@
     "order:status": "succeeded"
   },
   "stac_version": "1.1.0",
+  "providers": [
+      {
+        "url": "https://www.constellr.com",
+        "name": "Constellr",
+        "roles": [
+          "producer",
+          "processor"
+        ]
+      }
+  ],
   "stac_extensions": [
     "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
     "https://stac-extensions.github.io/file/v2.1.0/schema.json",
