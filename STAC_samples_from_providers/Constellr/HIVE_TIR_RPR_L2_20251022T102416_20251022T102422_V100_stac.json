@@ -93,6 +93,16 @@
    "processing:software": {
      "lstprecision-processing-workflow": "v0.18.40"
    },
+   "providers": [
+      {
+        "name": "Constellr",
+        "roles": [
+          "producer",
+          "processor"
+        ],
+        "url": "https://www.constellr.com"
+      }
+    ],
    "order:status": "completed",
    "order:id": "73379f68-dfcb-457c-ba75-734a2102c7e9",
    "eo:cloud_cover": 1.95,
