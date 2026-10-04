@@ -74,6 +74,16 @@
             0.0,
             0.0,
             1.0
+        ],
+        "providers": [
+          {
+            "name": "Kuva Space",
+            "roles": [
+              "producer",
+              "processor"
+            ],
+            "url": "https://kuvaspace.com"
+          }
         ]
     },
     "assets": {
@@ -87,13 +97,27 @@
             "title": "TAR product",
             "type": "application/tar"
         },
-        "syke_waterquality": {
+        "thumbnail": {
+          "roles": [
+            "thumbnail",
+            "overview"
+          ],
+          "file:size": 4430,
+          "proj:shape": [343, 343],
+          "file:checksum": "d5011062a258c7af78979d44d6955c78d71a47",
+          "file:local_path": "thumbnail.jpg",
+          "type": "image/jpeg",
+          "title": "Quicklook",
+          "data_type": "uint8",
+          "proj:code": null
+        },           
+        "water_quality": {
             "description": "In-situ data collected from a station or at a specific location",
             "file:checksum": "122016fe78333c0bb731b18e912a4634f91c4cd32a9832f1fe776e0b0f1d6738a3d3",
             "file:local_path": "HM62_HSI_SCA_L2_20250818T082610_20250818T082610_V100/syke_waterquality.csv",
             "file:size": 671,
             "roles": [
-                "metadata"
+                "data"
             ],
             "title": "syke_waterquality",
             "type": "text/csv"
@@ -104,7 +128,7 @@
             "file:local_path": "HM62_HSI_SCA_L2_20250818T082610_20250818T082610_V100/Ena\u0308ja\u0308rvi_11.csv",
             "file:size": 950,
             "roles": [
-                "metadata"
+                "data"
             ],
             "title": "Ena\u0308ja\u0308rvi_11",
             "type": "text/csv"
@@ -115,7 +139,7 @@
             "file:local_path": "HM62_HSI_SCA_L2_20250818T082610_20250818T082610_V100/Ena\u0308ja\u0308rvi_Rompsinma\u0308k_5.csv",
             "file:size": 1207,
             "roles": [
-                "metadata"
+                "data"
             ],
             "title": "Ena\u0308ja\u0308rvi_Rompsinma\u0308k_5",
             "type": "text/csv"
@@ -176,14 +200,14 @@
             ],
             "title": "Bottom of atmosphere reflectance at 416nm",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "raster:offset": 0,
+            "raster:scale": 0.0001,
+            "nodata": -32768,         
             "bands": [
                 {
                     "name": "b3_416nm",
                     "description": "Bottom of atmosphere reflectance at 416nm",
                     "eo:center_wavelength": 0.416,
-                    "raster:offset": 0,
-                    "raster:scale": 0.0001,
-                    "nodata": -32768,
                     "eo:common_name": "coastal",
                     "eo:full_width_half_max": 0.001
                 }
@@ -199,14 +223,14 @@
             ],
             "title": "Bottom of atmosphere reflectance at 419nm",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "raster:offset": 0,
+            "raster:scale": 0.0001,
+            "nodata": -32768,
             "bands": [
                 {
                     "name": "b4_419nm",
                     "description": "Bottom of atmosphere reflectance at 419nm",
                     "eo:center_wavelength": 0.419,
-                    "raster:offset": 0,
-                    "raster:scale": 0.0001,
-                    "nodata": -32768,
                     "eo:common_name": "coastal",
                     "eo:full_width_half_max": 0.001
                 }
