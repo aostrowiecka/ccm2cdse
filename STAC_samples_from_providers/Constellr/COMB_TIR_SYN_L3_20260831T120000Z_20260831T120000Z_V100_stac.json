@@ -1,5 +1,5 @@
 {
-  "id": "COMB_TIR_SYN_L3_20260831T12Z_20260831T12Z_V100",
+  "id": "COMB_TIR_SYN_L3_20260831T120000Z_20260831T120000Z_V100",
   "bbox": [
     -8.0043458,
     37.8284912,
@@ -9,7 +9,7 @@
   "type": "Feature",
   "assets": {
     "Product": {
-      "href": "s3://<CDSE_PRODUCER_BUCKET_PATH>/YYYY/MM/DD/COMB_TIR_SYN_L3_20260831T12Z_20260831T12Z_V100.tar",
+      "href": "s3://<CDSE_PRODUCER_BUCKET_PATH>/YYYY/MM/DD/COMB_TIR_SYN_L3_20260831T120000Z_20260831T120000Z_V100.tar",
       "roles": [
         "data",
         "metadata",
@@ -22,7 +22,7 @@
       "gsd": 30,
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "file:checksum": "multihash",
-      "file:local_path": "COMB_TIR_SYN_L3_20260831T12Z_20260831T12Z_V100/COMB_TIR_SYN_L3_20260831T12Z_20260831T12Z_V100_lst.tiff",
+      "file:local_path": "COMB_TIR_SYN_L3_20260831T120000Z_20260831T120000Z_V100/COMB_TIR_SYN_L3_20260831T120000Z_20260831T120000Z_V100_lst.tiff",
       "file:size": "<LST_FILE_SIZE_BYTES>",
       "nodata": 65535,
       "data_type": "uint16",
@@ -68,7 +68,7 @@
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "data_type": "uint16",
       "file:checksum": "multihash",
-      "file:local_path": "COMB_TIR_SYN_L3_20260831T12Z_20260831T12Z_V100/lst_std_20260831T12Z_NRT.tiff",
+      "file:local_path": "COMB_TIR_SYN_L3_20260831T120000Z_20260831T120000Z_V100/lst_std_20260831T12Z_NRT.tiff",
       "file:size": "<LST_STD_FILE_SIZE_BYTES>",
       "unit": "K",
       "nodata": 65535,
@@ -112,7 +112,7 @@
       "href": "s3://lst-products-datastore-213979744349/lstfusion/ed68fd4a-8e88-4598-8295-18b9cd51e151/metadata/metadata_20260831T12Z_NRT.json",
       "type": "application/json",
       "file:checksum": "multihash",
-      "file:local_path": "COMB_TIR_SYN_L3_20260831T12Z_20260831T12Z_V100/metadata_20260831T12Z_NRT.json",
+      "file:local_path": "COMB_TIR_SYN_L3_20260831T120000Z_20260831T120000Z_V100/metadata_20260831T12Z_NRT.json",
       "file:size": "<METADATA_FILE_SIZE_BYTES>",
       "roles": [
         "metadata"
@@ -191,7 +191,17 @@
     "product:timeliness": "<ISO_8601_DURATION>",
     "product:timeliness_category": "RPR",
     "order:id": "ed68fd4a-8e88-4598-8295-18b9cd51e151",
-    "order:status": "succeeded"
+    "order:status": "succeeded",
+    "providers": [
+        {
+          "name": "Constellr",
+          "roles": [
+            "producer",
+            "processor"
+          ],
+          "url": "https://www.constellr.com"
+        }
+    ]    
   },
   "stac_version": "1.1.0",
   "providers": [
