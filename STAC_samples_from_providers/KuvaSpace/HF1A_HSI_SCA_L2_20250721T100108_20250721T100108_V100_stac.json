@@ -145,7 +145,17 @@
         "sat:platform_international_designator": "2024-149CY",
         "view:azimuth": 122.37313842773438,
         "view:sun_azimuth": 152.66943,
-        "view:incidence_angle": 4.51055
+        "view:incidence_angle": 4.51055,
+        "providers": [
+          {
+            "name": "Kuva Space",
+            "roles": [
+              "producer",
+              "processor"
+            ],
+            "url": "https://kuvaspace.com"
+          }
+        ]        
     },
     "assets": {
         "Product": {
@@ -165,8 +175,92 @@
             "nodata": "nan",
             "bands": [
                 {
-                    "name": "l2a",
-                    "description": "BOA reflectance"
+                  "name": "blue_487nm",
+                  "description": "BOA reflectance at 487 nm"
+                },
+                {
+                  "name": "blue_495nm",
+                  "description": "BOA reflectance at 495 nm"
+                },
+                {
+                  "name": "blue_511nm",
+                  "description": "BOA reflectance at 511 nm"
+                },
+                {
+                  "name": "green_530nm",
+                  "description": "BOA reflectance at 530 nm"
+                },
+                {
+                  "name": "green_540nm",
+                  "description": "BOA reflectance at 540 nm"
+                },
+                {
+                  "name": "yellow_560nm",
+                  "description": "BOA reflectance at 560 nm"
+                },
+                {
+                  "name": "yellow_570nm",
+                  "description": "BOA reflectance at 570 nm"
+                },
+                {
+                  "name": "yellow_589nm",
+                  "description": "BOA reflectance at 589 nm"
+                },
+                {
+                  "name": "yellow_609nm",
+                  "description": "BOA reflectance at 609 nm"
+                },
+                {
+                  "name": "red_628nm",
+                  "description": "BOA reflectance at 628 nm"
+                },
+                {
+                  "name": "red_657nm",
+                  "description": "BOA reflectance at 657 nm"
+                },
+                {
+                  "name": "red_670nm",
+                  "description": "BOA reflectance at 670 nm"
+                },
+                {
+                  "name": "rededge_690nm",
+                  "description": "BOA reflectance at 690 nm"
+                },
+                {
+                  "name": "rededge_710nm",
+                  "description": "BOA reflectance at 710 nm"
+                },
+                {
+                  "name": "rededge_730nm",
+                  "description": "BOA reflectance at 730 nm"
+                },
+                {
+                  "name": "rededge_750nm",
+                  "description": "BOA reflectance at 750 nm"
+                },
+                {
+                  "name": "rededge_770nm",
+                  "description": "BOA reflectance at 770 nm"
+                },
+                {
+                  "name": "nir_790nm",
+                  "description": "BOA reflectance at 790 nm"
+                },
+                {
+                  "name": "nir_810nm",
+                  "description": "BOA reflectance at 810 nm"
+                },
+                {
+                  "name": "nir_830nm",
+                  "description": "BOA reflectance at 830 nm"
+                },
+                {
+                  "name": "nir_850nm",
+                  "description": "BOA reflectance at 850 nm"
+                },
+                {
+                  "name": "nir_870nm",
+                  "description": "BOA reflectance at 870 nm"
                 }
             ],
             "roles": [
@@ -181,9 +275,12 @@
             "file:size": 43016,
             "type": "image/jpeg",
             "roles": [
-                "thumbnail"
+                "thumbnail",
+                "preview"
             ],
-            "title": "Thumbnail"
+            "title": "Thumbnail",
+            "proj:shape": [343, 343],
+            "proj:code": null
         }
     }
 }
