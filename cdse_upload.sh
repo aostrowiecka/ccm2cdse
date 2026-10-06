@@ -229,7 +229,7 @@ rclone -q copy \
 --metadata-set CDSE-upload-version=$version \
 --metadata-set uploaded=$timestamp \
 --metadata-set product-uuid=$(cat /proc/sys/kernel/random/uuid) \
---metadata-set WorkflowName="cdse_upload" \
+--metadata-set WorkflowName=$WorkflowName \
 --metadata-set invisible=$invisible \
 --metadata-set source-s3-endpoint-url=$RCLONE_CONFIG_CDSE_ENDPOINT \
 --metadata-set file-size=$file_size \
