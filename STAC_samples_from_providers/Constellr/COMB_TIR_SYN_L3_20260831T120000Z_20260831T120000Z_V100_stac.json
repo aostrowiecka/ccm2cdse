@@ -114,6 +114,7 @@
       "file:checksum": "multihash",
       "file:local_path": "COMB_TIR_SYN_L3_20260831T120000Z_20260831T120000Z_V100/metadata_20260831T12Z_NRT.json",
       "file:size": "<METADATA_FILE_SIZE_BYTES>",
+      "proj:code": null,
       "roles": [
         "metadata"
       ],
@@ -129,11 +130,7 @@
       "title": "Thumbnail",
       "file:size": 205825,
       "file:checksum": "multihash",
-      "proj:code": null,
-      "proj:shape": [
-        0,
-        0
-      ]   
+      "proj:code": null   
     }    
   },
   "geometry": {
