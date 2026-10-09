@@ -53,7 +53,6 @@
     "product:type": "IR1_LST_L2",
     "product:timeliness": "P7D",
     "product:timeliness_category": "NTC",
-    "proj:code": "EPSG:4326",
     "view:azimuth": 248.109,
     "start_datetime": "2025-03-15T01:33:23.369000Z",
     "end_datetime": "2025-03-15T01:34:21.935000Z",
