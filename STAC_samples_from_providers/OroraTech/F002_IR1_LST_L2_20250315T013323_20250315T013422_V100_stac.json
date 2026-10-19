@@ -2,13 +2,13 @@
   "type": "Feature",
   "stac_version": "1.1.0",
   "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
     "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
     "https://stac-extensions.github.io/view/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
     "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
-    "https://stac-extensions.github.io/sat/v1.1.0/schema.json"
+    "https://stac-extensions.github.io/sat/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "F002_IR1_LST_L2_20250315T013323_20250315T013422_V100",
   "geometry": {
@@ -28,8 +28,8 @@
           42.947
         ],
         [
-           -0.059,
-           43.301
+          -0.059,
+          43.301
         ],
         [
           0.926,
@@ -53,15 +53,11 @@
     "product:type": "IR1_LST_L2",
     "product:timeliness": "P7D",
     "product:timeliness_category": "NTC",
+    "sat:platform_international_designator": "2023-084AQ",
     "view:azimuth": 248.109,
     "start_datetime": "2025-03-15T01:33:23.369000Z",
     "end_datetime": "2025-03-15T01:34:21.935000Z",
-    "gsd": 200,
-    "instruments": [
-      "F002-IR1",
-      "SAFIRE"
-    ],
-    "platform": "FOREST-2",
+    "created": "2026-10-19T13:18:25.660569Z",
     "providers": [
       {
         "name": "OroraTech",
@@ -72,8 +68,13 @@
         "url": "https://ororatech.com"
       }
     ],
-    "datetime": "2025-03-15T01:33:23.369000Z",
-    "sat:platform_international_designator": "2023-084AQ"
+    "gsd": 200,
+    "platform": "FOREST-2",
+    "instruments": [
+      "F002-IR1",
+      "SAFIRE"
+    ],
+    "datetime": "2025-03-15T01:33:23.369000Z"
   },
   "assets": {
     "lst": {
@@ -89,28 +90,28 @@
       ],
       "proj:code": "EPSG:4326",
       "proj:bbox": [
-        -2.335486888885498,
-        39.31550977053121,
-        0.9246282959356904,
-        43.30010223388672
+        -2.3351621627807617,
+        39.31609737779945,
+        0.9230924788862467,
+        43.30067825317383
       ],
       "proj:shape": [
         2212,
-        1365
+        1364
       ],
       "proj:transform": [
-        0.0023883627727627754,
+        0.002388749737292528,
         0.0,
-        -2.335486888885498,
+        -2.3351621627807617,
         0.0,
-        -0.0018013528315350413,
-        43.30010223388672,
+        -0.0018013475928455591,
+        43.30067825317383,
         0.0,
         0.0,
         1.0
       ],
-      "file:checksum": "3c006f6cb23ff42ea33e2d36628c151523e4177525b607d5cbbc0a269986cc55",
-      "file:size": 7349349,
+      "file:checksum": "1220581e6f2578bd36cc0a38d784f7cb29c16225c5b080bd96092d12021ee1264f17",
+      "file:size": 3514474,
       "file:local_path": "F002_IR1_LST_L2_20250315T013323_20250315T013422_V100/F002_IR1_LST_L2_20250315T013323_20250315T013422_V100.tif",
       "roles": [
         "data"
@@ -125,26 +126,26 @@
         331
       ],
       "proj:transform": [
-        0.0098492906,
+        0.009843669612287035,
         0.0,
-        -2.335486888885498,
+        -2.3351621627807617,
         0.0,
-        -0.0073925649,
-        43.30010223388672,
+        -0.007392543368041515,
+        43.30067825317383,
         0.0,
         0.0,
         1.0
       ],
-      "file:checksum": "7384cc7c376964513658609a7276c0007e99bc62840d03d61c059329cb5da0cf",
+      "file:checksum": "12207384cc7c376964513658609a7276c0007e99bc62840d03d61c059329cb5da0cf",
       "file:size": 202346,
-      "file:local_path": "F002_IR1_LST_L2_20250315T013323_20250315T013422_V100.png",
+      "file:local_path": "F002_IR1_LST_L2_20250315T013323_20250315T013422_V100/F002_IR1_LST_L2_20250315T013323_20250315T013422_V100.png",
       "roles": [
         "thumbnail",
         "overview"
       ]
     },
     "Product": {
-      "href": "s3://CCM-ORORATECH-INGESTION/2026/07/27/F002_IR1_LST_L2_20250315T013323_20250315T013422_V100.tar",
+      "href": "s3://CCM-ORORATECH-INGESTION/2026/10/19/F002_IR1_LST_L2_20250315T013323_20250315T013422_V100.tar",
       "type": "application/tar",
       "title": "TAR product",
       "roles": [
