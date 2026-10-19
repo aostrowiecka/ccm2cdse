@@ -1,0 +1,162 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "id": "F005_IR2_LST_L2_20260212T033109_20260212T033208_V100",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          22.16,
+          60.979
+        ],
+        [
+          22.784,
+          61.772
+        ],
+        [
+          23.356,
+          62.464
+        ],
+        [
+          24.198,
+          63.43
+        ],
+        [
+          29.492,
+          62.645
+        ],
+        [
+          26.227,
+          59.258
+        ],
+        [
+          21.593,
+          60.222
+        ],
+        [
+          22.16,
+          60.979
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    21.593,
+    59.258,
+    29.492,
+    63.43
+  ],
+  "properties": {
+    "description": "OroraTech Level-2 Land Surface Temperature expressed in Kelvin.",
+    "eo:cloud_cover": 99.87,
+    "processing:facility": "OroraTech",
+    "processing:level": "L2",
+    "processing:version": "v0.2.1",
+    "product:type": "IR2_LST_L2",
+    "product:timeliness": "P7D",
+    "product:timeliness_category": "NTC",
+    "proj:code": "EPSG:4326",
+    "view:azimuth": 291.488,
+    "start_datetime": "2026-02-12T03:31:09.016000Z",
+    "end_datetime": "2026-02-12T03:32:08.269000Z",
+    "created": "2026-10-08T11:24:41.218056Z",
+    "providers": [
+      {
+        "name": "OroraTech",
+        "roles": [
+          "producer",
+          "processor"
+        ],
+        "url": "https://ororatech.com"
+      }
+    ],
+    "gsd": 200,
+    "platform": "FOREST-5",
+    "instruments": [
+      "F005-IR2"
+    ],
+    "datetime": "2026-02-12T03:31:09.016000Z"
+  },
+  "assets": {
+    "lst": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Land Surface Temperature [K]",
+      "nodata": 0,
+      "data_type": "uint16",
+      "bands": [
+        {
+          "name": "lst",
+          "description": "Land Surface Temperature [K]"
+        }
+      ],
+      "proj:code": "EPSG:4326",
+      "proj:bbox": [
+        21.601133346557617,
+        59.26999277807772,
+        29.481159452116117,
+        63.42713928222656
+      ],
+      "proj:shape": [
+        2316,
+        2099
+      ],
+      "proj:transform": [
+        21.601133346557617,
+        0.0037541810888797045,
+        0.0,
+        63.42713928222656,
+        0.0,
+        -0.0017949682660400867
+      ],
+      "file:checksum": "1220b64bd905301f29ddd4bfd1bf76ddea1d513c3b7341dfdfebd608735e1b242ca9",
+      "file:size": 4550335,
+      "file:local_path": "F005_IR2_LST_L2_20260212T033109_20260212T033208_V100/F005_IR2_LST_L2_20260212T033109_20260212T033208_V100.tif",
+      "roles": [
+        "data"
+      ]
+    },
+    "thumbnail": {
+      "type": "image/png",
+      "title": "Quicklook",
+      "proj:code": "EPSG:4326",
+      "proj:shape": [
+        487,
+        539
+      ],
+      "proj:transform": [
+        21.601133346557617,
+        0.0037541810888797045,
+        0.0,
+        63.42713928222656,
+        0.0,
+        -0.0017949682660400867
+      ],
+      "file:checksum": "12203aeb780b25c0fa1dc39894969610d133a9af8b1e79b95cfa70c59c947e7ca632",
+      "file:size": 165427,
+      "file:local_path": "F005_IR2_LST_L2_20260212T033109_20260212T033208_V100/F005_IR2_LST_L2_20260212T033109_20260212T033208_V100.png",
+      "roles": [
+        "thumbnail",
+        "overview"
+      ]
+    },
+    "Product": {
+      "href": "s3://CCM-ORORATECH-DEV/ccm-thermal-lst-mr/2026/10/08/F005_IR2_LST_L2_20260212T033109_20260212T033208_V100.tar",
+      "type": "application/tar",
+      "title": "TAR product",
+      "roles": [
+        "data",
+        "archive"
+      ]
+    }
+  },
+  "collection": "ccm-thermal-lst-mr"
+}
